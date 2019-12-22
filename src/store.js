@@ -1,0 +1,71 @@
+import { TweenLite } from 'gsap';
+
+const demo = { angle: 0 };
+const demo1 = { angle1: 0 };
+
+export const store = {
+    debug: true,
+    state: {
+        ang: 0,
+        ang1: 0,
+        dist: 0,
+        mov: TweenLite.to(demo, 700, {
+          angle: 365,
+          repeat: -1,
+          onUpdate: function() {
+            store.state.ang = demo.angle;
+          }
+        }),
+        mov1: TweenLite.to(demo1, 700, {
+          angle1: 365,
+          repeat: -1,
+          onUpdate: function() {
+            store.state.ang1 = demo1.angle1;
+          }
+        }),
+        ecosystem: [
+            {
+                name: 'Ссылки',
+                viewName: 'links',
+                icon: 'fas fa-link',
+                elements: [
+                    {
+                        name: "Facebook",
+                        url: "https://forum.vuejs.org/",
+                        icon: 'fab fa-facebook-f'
+                    },
+                    {
+                        name: "GitHub",
+                        url: "https://chat.vuejs.org/",
+                        icon: 'fab fa-github'
+                    },
+                    {
+                        name: "Telegram",
+                        url: "https://chat.vuejs.org/",
+                        icon: 'fab fa-telegram-plane'
+                    },
+                    {
+                        name: "LinkedIn",
+                        url: "https://chat.vuejs.org/",
+                        icon: 'fab fa-linkedin-in'
+                    }
+                  ]
+            },
+            {
+                name: 'Опыт',
+                viewName: '',
+                icon: 'fas fa-user-tie',
+            },
+            {
+                name: 'Проекты',
+                viewName: 'projects',
+                icon: 'fas fa-project-diagram',
+            },
+            {
+                name: 'Настройки',
+                viewName: 'settings',
+                icon: 'fas fa-sliders-h'
+            }
+        ]
+      }
+}

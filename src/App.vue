@@ -6,11 +6,15 @@
 </template>
 
 <script>
+  import Home from '@/views/Home';
+  import Links from '@/views/Links';
+  import Settings from '@/views/Settings';
   export default {
+    name: 'App',
     components: {
-      Home: () => import('./views/Home'),
-      Links: () => import('./views/Links'),
-      Settings: () => import('./views/Settings')
+      Home,
+      Links,
+      Settings
     },
     mounted() {
       this.$zircle.config({

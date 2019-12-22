@@ -1,39 +1,63 @@
 <template>
-    <z-view>
-        <h1>Social links</h1>
-        <div slot="extension">
-                <z-spot
-                    v-for="(elem, index) in elements"
-                    :key="index"
-                    :label="elem.label"
-                    :label-pos="elem.labelPos"
-                    :angle="elem.angle"
-                    :distance="120"
-                    @click.native.prevent="goToUrl(elem.url)"
-                    size="s"
-                >
-                    <i :class="elem.icon"></i>
-                </z-spot>
-        </div>
-    </z-view>
+  <z-view>
+    <span>
+      <strong>{{ ecosystem.name }}</strong>
+    </span>
+    <br>
+    <span>Ecosystem</span>
+
+    <section slot="extension">
+      <z-spot
+        v-for="(element, index) in ecosystem.elements"
+        class="inactive"
+        :angle="(360 / ecosystem.elements.length * index) - sharedState.ang1 * 11"
+        :distance="130"
+        size="medium"
+        @mouseover.native="active"
+        @touchstart.native="active"
+        @mouseout.native="inactive"
+        @touchend.native="inactive"
+        @click.native.prevent="window.open(element.url, '_blank')"
+        :label="element.name"
+        :key="index"
+      >
+        <i :class="element.icon"></i>
+      </z-spot>
+    </section>
+  </z-view>
 </template>
 
 <script>
-    export default {
-        data() {
-            return {
-                elements: [
-                    {label: 'Facebook', angle: 45, labelPos: 'right', icon: 'fab fa-facebook-f', url: 'https://fontawesome.com/icons/link?style=solid'},
-                    {label: 'GitHub', angle: 135, icon: 'fab fa-github', labelPos: 'left'},
-                    {label: 'Telegram', angle: 225, icon: 'fab fa-telegram-plane', labelPos: 'left'},
-                    {label: 'LinkedInd', angle: 315, icon: 'fab fa-linkedin-in', labelPos: 'right'}
-                ]
-            }
-        },
-        methods: {
-            goToUrl: function(url) {
-                window.open(url, '_blank')
-            }
-        }
+import { store } from "../store";
+
+export default {
+  name: "links",
+  data() {
+    return {
+      sharedState: store.state,
+      ecosystem: store.state.ecosystem[0]
+    };
+  },
+  methods: {
+    active(event) {
+      var target = event.target.parentElement;
+      if (target.classList.contains("inactive")) {
+        target.classList.remove("inactive");
+        target.classList.add("active");
+        this.sharedState.mov1.pause();
+      }
+    },
+    inactive(event) {
+      var target = event.target.parentElement;
+      if (target.classList.contains("active")) {
+        target.classList.remove("active");
+        target.classList.add("inactive");
+        this.sharedState.mov1.play();
+      }
     }
+  },
+  destroyed() {
+    this.sharedState.mov.play();
+  }
+};
 </script>
