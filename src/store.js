@@ -53,8 +53,31 @@ export const store = {
             },
             {
                 name: 'Опыт',
-                viewName: '',
+                viewName: 'experience',
                 icon: 'fas fa-user-tie',
+                elements: [
+                  {
+                    name: 'Pixmove',
+                    dates: '03.12-04.12',
+                    position: 'Frontend-разработчик',
+                    icon: "fab fa-qq",
+                    viewName: 'experienceitem'
+                  },
+                  {
+                    name: 'QSoft',
+                    dates: '03.12-04.12',
+                    position: 'Ведущий frontend-разработчик',
+                    icon: "fab fa-quora",
+                    viewName: 'experienceitem'
+                  },
+                  {
+                    name: 'S8 Capital',
+                    dates: '03.12-04.12',
+                    position: 'Frontend developer',
+                    icon: "fas fa-money-bill-alt",
+                    viewName: 'experienceitem'
+                  }
+                ]
             },
             {
                 name: 'Проекты',

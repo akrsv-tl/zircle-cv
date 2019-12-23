@@ -9,12 +9,14 @@
   import Home from '@/views/Home';
   import Links from '@/views/Links';
   import Settings from '@/views/Settings';
+  import Experience from '@/views/Experience';
   export default {
     name: 'App',
     components: {
       Home,
       Links,
-      Settings
+      Settings,
+      Experience
     },
     mounted() {
       this.$zircle.config({
