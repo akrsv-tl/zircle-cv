@@ -36,7 +36,7 @@ export const store = {
                     },
                     {
                         name: "GitHub",
-                        url: "https://chat.vuejs.org/",
+                        url: "https://github.com/ASmartLynx",
                         icon: 'fab fa-github'
                     },
                     {
@@ -60,28 +60,25 @@ export const store = {
                     name: 'Pixmove',
                     dates: '03.12-04.12',
                     position: 'Frontend-разработчик',
-                    icon: "fab fa-qq",
-                    viewName: 'experienceitem'
+                    icon: "fab fa-qq"
                   },
                   {
                     name: 'QSoft',
                     dates: '03.12-04.12',
                     position: 'Ведущий frontend-разработчик',
-                    icon: "fab fa-quora",
-                    viewName: 'experienceitem'
+                    icon: "fab fa-quora"
                   },
                   {
                     name: 'S8 Capital',
-                    dates: '03.12-04.12',
+                    dates: '03.12-04.12',                    
                     position: 'Frontend developer',
-                    icon: "fas fa-money-bill-alt",
-                    viewName: 'experienceitem'
+                    icon: "fas fa-money-bill-alt"
                   }
                 ]
             },
             {
-                name: 'Проекты',
-                viewName: 'projects',
+                name: 'Стек',
+                viewName: 'stack',
                 icon: 'fas fa-project-diagram',
             },
             {

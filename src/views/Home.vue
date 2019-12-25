@@ -2,7 +2,7 @@
     <z-view style="background-color: white">
       <!-- <span><img src="../assets/lynx.png" width="150" /></span><br> -->
       <h1><strong>First name </strong></h1>
-      <h2> Second name </h2>
+      <h2> Frontend Developer </h2>
       <section slot="extension">
         <z-spot
           v-for="(element, index) in ecosystem"
