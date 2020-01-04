@@ -1,11 +1,6 @@
 <template>
   <z-view>
     <span>{{ items }}</span>
-    <ul>
-      <li>React</li>
-      <li>Ext.js</li>
-      <li>Vue</li>
-    </ul>
   </z-view>
 </template>
 

@@ -31,7 +31,7 @@ export const store = {
                 elements: [
                     {
                         name: "Facebook",
-                        url: "https://forum.vuejs.org/",
+                        url: "https://www.facebook.com/a.kartsev93",
                         icon: 'fab fa-facebook-f'
                     },
                     {
@@ -57,22 +57,25 @@ export const store = {
                 icon: 'fas fa-user-tie',
                 elements: [
                   {
-                    name: 'Pixmove',
-                    dates: '03.12-04.12',
-                    position: 'Frontend-разработчик',
-                    icon: "fab fa-qq"
+                    // name: 'Pixmove',
+                    // dates: '03.12-04.12',
+                    // position: 'Frontend-разработчик',
+                    icon: "fab fa-qq",
+                    text: 'Ghbdtn^ rfr ltkbirb>'
                   },
                   {
-                    name: 'QSoft',
-                    dates: '03.12-04.12',
-                    position: 'Ведущий frontend-разработчик',
-                    icon: "fab fa-quora"
+                    // name: 'QSoft',
+                    // dates: '03.12-04.12',
+                    // position: 'Ведущий frontend-разработчик',
+                    icon: "fab fa-quora",
+                    text: 'Ghbdtn^ rfr ltkbirb>'
                   },
                   {
-                    name: 'S8 Capital',
-                    dates: '03.12-04.12',                    
-                    position: 'Frontend developer',
-                    icon: "fas fa-money-bill-alt"
+                    // name: 'S8 Capital',
+                    // dates: '03.12-04.12',                    
+                    // position: 'Frontend developer',
+                    icon: "fas fa-money-bill-alt",
+                    text: 'Ghbdtn^ rfr ltkbirb>'
                   }
                 ]
             },
@@ -80,6 +83,38 @@ export const store = {
                 name: 'Стек',
                 viewName: 'stack',
                 icon: 'fas fa-project-diagram',
+                elements: [
+                  {
+                    name: "React.js",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fab fa-react'
+                  },
+                  {
+                    name: "Vue.js",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fab fa-vuejs'
+                  },
+                  {
+                    name: "D3.js",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fas fa-chart-area'
+                  },
+                  {
+                    name: "Ext.js",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fas fa-table'
+                  },
+                  {
+                    name: "SCSS, SASS",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fab fa-sass'
+                  },
+                  {
+                    name: "Facebook",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fab fa-facebook-f'
+                  },
+                ]
             },
             {
                 name: 'Настройки',

@@ -11,6 +11,7 @@
   import Settings from '@/views/Settings';
   import Experience from '@/views/Experience';
   import ExperienceItem from '@/views/ExperienceItem';
+  import Stack from '@/views/Stack';
   export default {
     name: 'App',
     components: {
@@ -18,7 +19,8 @@
       Links,
       Settings,
       Experience,
-      ExperienceItem
+      ExperienceItem,
+      Stack
     },
     mounted() {
       this.$zircle.config({
