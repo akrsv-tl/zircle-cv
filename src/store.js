@@ -25,31 +25,31 @@ export const store = {
         }),
         ecosystem: [
             {
-                name: 'Ссылки',
-                viewName: 'links',
-                icon: 'fas fa-link',
-                elements: [
-                    {
-                        name: "Facebook",
-                        url: "https://www.facebook.com/a.kartsev93",
-                        icon: 'fab fa-facebook-f'
-                    },
-                    {
-                        name: "GitHub",
-                        url: "https://github.com/ASmartLynx",
-                        icon: 'fab fa-github'
-                    },
-                    {
-                        name: "Telegram",
-                        url: "https://chat.vuejs.org/",
-                        icon: 'fab fa-telegram-plane'
-                    },
-                    {
-                        name: "LinkedIn",
-                        url: "https://chat.vuejs.org/",
-                        icon: 'fab fa-linkedin-in'
-                    }
-                  ]
+              name: 'Ссылки',
+              viewName: 'links',
+              icon: 'fas fa-link',
+              elements: [
+                {
+                    name: "Facebook",
+                    url: "https://www.facebook.com/a.kartsev93",
+                    icon: 'fab fa-facebook-f'
+                },
+                {
+                    name: "GitHub",
+                    url: "https://github.com/ASmartLynx",
+                    icon: 'fab fa-github'
+                },
+                {
+                    name: "Telegram",
+                    url: "https://chat.vuejs.org/",
+                    icon: 'fab fa-telegram-plane'
+                },
+                {
+                    name: "LinkedIn",
+                    url: "https://chat.vuejs.org/",
+                    icon: 'fab fa-linkedin-in'
+                }
+              ]
             },
             {
                 name: 'Опыт',
@@ -57,25 +57,25 @@ export const store = {
                 icon: 'fas fa-user-tie',
                 elements: [
                   {
-                    // name: 'Pixmove',
-                    // dates: '03.12-04.12',
-                    // position: 'Frontend-разработчик',
+                    name: 'Pixmove',
+                    dates: '03.12-04.12',
+                    position: 'Frontend-разработчик',
                     icon: "fab fa-qq",
-                    text: 'Ghbdtn^ rfr ltkbirb>'
+                    viewName: 'pixmove'
                   },
                   {
-                    // name: 'QSoft',
-                    // dates: '03.12-04.12',
-                    // position: 'Ведущий frontend-разработчик',
+                    name: 'QSoft',
+                    dates: '03.12-04.12',
+                    position: 'Ведущий frontend-разработчик',
                     icon: "fab fa-quora",
-                    text: 'Ghbdtn^ rfr ltkbirb>'
+                    viewName: 'qsoft'
                   },
                   {
-                    // name: 'S8 Capital',
-                    // dates: '03.12-04.12',                    
-                    // position: 'Frontend developer',
+                    name: 'S8 Capital',
+                    dates: '03.12-04.12',                    
+                    position: 'Frontend developer',
                     icon: "fas fa-money-bill-alt",
-                    text: 'Ghbdtn^ rfr ltkbirb>'
+                    viewName: 'stoloto'
                   }
                 ]
             },

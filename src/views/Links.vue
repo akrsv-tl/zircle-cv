@@ -17,7 +17,7 @@
         @touchstart.native="active"
         @mouseout.native="inactive"
         @touchend.native="inactive"
-        @click.native.prevent="window.open(element.url, '_blank')"
+        @click.native.prevent="openLink(element)"
         :label="element.name"
         :key="index"
       >
@@ -39,6 +39,9 @@ export default {
     };
   },
   methods: {
+    openLink: function(element) {
+      window.open(element.url, '_blank');
+    },
     active(event) {
       var target = event.target.parentElement;
       if (target.classList.contains("inactive")) {

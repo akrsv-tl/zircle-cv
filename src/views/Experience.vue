@@ -19,7 +19,7 @@
         @touchend.native="inactive"
         :label="element.name"
         :key="index"
-        to-view="experienceitem"
+        :to-view="element.viewName"
       >
         <i :class="element.icon"></i>
       </z-spot>
@@ -29,13 +29,9 @@
 
 <script>
 import { store } from "../store";
-import ExperienceItem from '@/views/ExperienceItem';
 
 export default {
   name: "experience",
-  components: {
-    ExperienceItem
-  },
   data() {
     return {
       sharedState: store.state,

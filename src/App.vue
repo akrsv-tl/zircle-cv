@@ -10,8 +10,10 @@
   import Links from '@/views/Links';
   import Settings from '@/views/Settings';
   import Experience from '@/views/Experience';
-  import ExperienceItem from '@/views/ExperienceItem';
   import Stack from '@/views/Stack';
+  import Pixmove from '@/views/Pixmove';
+  import Qsoft from '@/views/Qsoft';
+  import Stoloto from '@/views/Stoloto';
   export default {
     name: 'App',
     components: {
@@ -19,8 +21,10 @@
       Links,
       Settings,
       Experience,
-      ExperienceItem,
-      Stack
+      Stack,
+      Pixmove,
+      Qsoft,
+      Stoloto
     },
     mounted() {
       this.$zircle.config({
