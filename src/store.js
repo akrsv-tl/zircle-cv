@@ -39,14 +39,14 @@ export const store = {
                     url: "https://github.com/ASmartLynx",
                     icon: 'fab fa-github'
                 },
-                {
-                    name: "Telegram",
-                    url: "https://chat.vuejs.org/",
-                    icon: 'fab fa-telegram-plane'
-                },
+                // {
+                //     name: "Telegram",
+                //     url: "https://chat.vuejs.org/",
+                //     icon: 'fab fa-telegram-plane'
+                // },
                 {
                     name: "LinkedIn",
-                    url: "https://chat.vuejs.org/",
+                    url: "https://www.linkedin.com/in/alexander-kartsev-188006150/",
                     icon: 'fab fa-linkedin-in'
                 }
               ]
